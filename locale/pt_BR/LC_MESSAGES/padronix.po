@@ -1,0 +1,114 @@
+# Padronix NVDA Add-on - Tradução em Português do Brasil
+# Copyright (C) 2026 Melhym Pereira Quemel
+# Este arquivo é distribuído sob a mesma licença do pacote Padronix.
+# PRIMEIRO TRADUTOR <EMAIL@ADDRESS>, 2026.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Padronix 2026.1.0\n"
+"Report-Msgid-Bugs-To: mpquemel@gmail.com\n"
+"POT-Creation-Date: 2026-03-04 14:00-0300\n"
+"PO-Revision-Date: 2026-03-05 14:00-0300\n"
+"Last-Translator: Melhym Pereira Quemel <mpquemel@gmail.com>\n"
+"Language-Team: Português do Brasil\n"
+"Language: pt_BR\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: globalPlugins/padronix/__init__.py:45
+msgid "Padronix opened"
+msgstr "Padronix aberto"
+
+#: globalPlugins/padronix/__init__.py:50
+msgid "Error opening Padronix"
+msgstr "Erro ao abrir Padronix"
+
+#: globalPlugins/padronix/main_dialog.py:85
+msgid "Opening TXT file selector..."
+msgstr "Abrindo seletor de arquivo TXT..."
+
+#: globalPlugins/padronix/main_dialog.py:95
+msgid "TXT loaded"
+msgstr "TXT carregado"
+
+#: globalPlugins/padronix/main_dialog.py:115
+msgid "Opening JSON file selector..."
+msgstr "Abrindo seletor de arquivo JSON..."
+
+#: globalPlugins/padronix/main_dialog.py:125
+msgid "JSON loaded"
+msgstr "JSON carregado"
+
+#: globalPlugins/padronix/main_dialog.py:135
+msgid "Starting processing..."
+msgstr "Iniciando processamento..."
+
+#: globalPlugins/padronix/workflow_manager.py:120
+msgid "Structuring article with AI..."
+msgstr "Estruturando artigo com IA..."
+
+#: globalPlugins/padronix/workflow_manager.py:130
+msgid "Rendering DOCX document..."
+msgstr "Renderizando documento DOCX..."
+
+#: globalPlugins/padronix/workflow_manager.py:140
+msgid "Finalizing..."
+msgstr "Finalizando..."
+
+#: globalPlugins/padronix/workflow_manager.py:145
+msgid "Padronix document generated at"
+msgstr "Documento Padronix gerado em"
+
+#: globalPlugins/padronix/workflow_manager.py:155
+msgid "Processing error"
+msgstr "Erro no processamento"
+
+#: globalPlugins/padronix/padronix_settings.py:45
+msgid "AI Provider"
+msgstr "Provedor de IA"
+
+#: globalPlugins/padronix/padronix_settings.py:50
+msgid "API Key"
+msgstr "Chave API"
+
+#: globalPlugins/padronix/padronix_settings.py:55
+msgid "Update Models List"
+msgstr "Atualizar Lista de Modelos"
+
+#: globalPlugins/padronix/padronix_settings.py:60
+msgid "Model"
+msgstr "Modelo"
+
+#: globalPlugins/padronix/padronix_settings.py:65
+msgid "Academic Standard"
+msgstr "Padrão Acadêmico"
+
+#: globalPlugins/padronix/padronix_settings.py:70
+msgid "Manage Standards"
+msgstr "Gerenciar Padrões"
+
+#: globalPlugins/padronix/padronix_settings.py:75
+msgid "Note: For local Ollama, leave key blank or use 'ollama-local'"
+msgstr "Nota: Para Ollama local, deixe a chave em branco ou use 'ollama-local'"
+
+#: globalPlugins/padronix/padronix_settings.py:80
+msgid "Provider {} selected. {} models available."
+msgstr "Provedor {} selecionado. {} modelos disponíveis."
+
+#: globalPlugins/padronix/padronix_settings.py:85
+msgid "Updating {} models..."
+msgstr "Atualizando modelos do {}..."
+
+#: globalPlugins/padronix/padronix_settings.py:90
+msgid "{} models updated"
+msgstr "{} modelos atualizados"
+
+#: globalPlugins/padronix/padronix_settings.py:95
+msgid "Error: {}"
+msgstr "Erro: {}"
+
+#: globalPlugins/padronix/padronix_settings.py:100
+msgid "Standards manager will be implemented in future version"
+msgstr "Gerenciador de padrões será implementado em versão futura"

@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Padronix - NVDA Add-on</title>
+    <style>
+        body { font-family: sans-serif; line-height: 1.6; max-width: 800px; margin: 0 auto; padding: 20px; }
+        h1 { color: #2563eb; }
+        h2 { color: #1e40af; margin-top: 1.5em; }
+        code { background: #f3f4f6; padding: 2px 6px; border-radius: 3px; }
+        .shortcut { font-weight: bold; color: #dc2626; }
+        [dir="rtl"] { direction: rtl; text-align: right; }
+    </style>
+</head>
+<body>
+<h1>Padronix - Academic Article Formatter</h1>
+<p>Version: 2026.1.0</p>
+
+<h2>Description</h2>
+<p>Padronix is an NVDA add-on that assists in structuring and formatting academic articles. With AI model integration, it enables generating documents in ABNT, APA, IEEE, and other academic formats in an accessible and automated manner.</p>
+
+<h2>Installation</h2>
+<ol>
+    <li>Download the .nvda-addon file</li>
+    <li>Open NVDA → Tools → Manage Add-ons</li>
+    <li>Click "Install..." and select the file</li>
+    <li>Restart NVDA when prompted</li>
+</ol>
+
+<h2>Usage</h2>
+<ol>
+    <li>Press <span class="shortcut">NVDA+Ctrl+Shift+F</span> to open Padronix</li>
+    <li>Load a TXT file with the article text</li>
+    <li>Import a structured JSON file (optional)</li>
+    <li>Click "Generate DOCX Document"</li>
+    <li>The file will be saved to the Documents folder</li>
+</ol>
+
+<h2>Settings</h2>
+<p>Access: NVDA → Preferences → Settings → Padronix</p>
+<ul>
+    <li>AI Provider (Google, OpenAI, OpenRouter, Ollama)</li>
+    <li>API Key</li>
+    <li>Model</li>
+    <li>Academic Standard (ABNT, APA, IEEE, etc.)</li>
+</ul>
+
+<h2>Requirements</h2>
+<ul>
+    <li>NVDA 2024.1 or higher</li>
+    <li>Python 3.11+ (included in NVDA 2026+)</li>
+    <li>Internet connection (except for local Ollama)</li>
+    <li>Libraries: python-docx, lxml (included)</li>
+</ul>
+
+<h2>License</h2>
+<p>GPL v3+ - GNU General Public License version 3 or later</p>
+
+<h2>Contact</h2>
+<p>Developer: Melhym Pereira Quemel<br>
+Email: <a href="mailto:mpquemel@gmail.com">mpquemel@gmail.com</a><br>
+GitHub: <a href="https://github.com/mpquemel/padronix">github.com/mpquemel/padronix</a></p>
+</body>
+</html>

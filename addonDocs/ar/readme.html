@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <title>Padronix - NVDA Add-on</title>
+    <style>
+        body { font-family: sans-serif; line-height: 1.6; max-width: 800px; margin: 0 auto; padding: 20px; }
+        h1 { color: #2563eb; }
+        h2 { color: #1e40af; margin-top: 1.5em; }
+        code { background: #f3f4f6; padding: 2px 6px; border-radius: 3px; }
+        .shortcut { font-weight: bold; color: #dc2626; }
+        [dir="rtl"] { direction: rtl; text-align: right; }
+    </style>
+</head>
+<body>
+<h1>Padronix - منسق المقالات الأكاديمية</h1>
+<p>الإصدار: 2026.1.0</p>
+
+<h2>الوصف</h2>
+<p>Padronix هو إضافة لـ NVDA تساعد في هيكلة وتنسيق المقالات الأكاديمية. من خلال التكامل مع نماذج الذكاء الاصطناعي، يتيح إنشاء مستندات وفق معايير ABNT وAPA وIEEE وغيرها من الصيغ الأكاديمية بطريقة سهلة وآلية.</p>
+
+<h2>التثبيت</h2>
+<ol>
+    <li>قم بتنزيل ملف .nvda-addon</li>
+    <li>افتح NVDA → أدوات → إدارة الإضافات</li>
+    <li>انقر على "تثبيت..." وحدد الملف</li>
+    <li>أعد تشغيل NVDA عند الطلب</li>
+</ol>
+
+<h2>الاستخدام</h2>
+<ol>
+    <li>اضغط <span class="shortcut">NVDA+Ctrl+Shift+F</span> لفتح Padronix</li>
+    <li>حمّل ملف TXT يحتوي على نص المقال</li>
+    <li>استورد ملف JSON منظم (اختياري)</li>
+    <li>انقر على "إنشاء مستند DOCX"</li>
+    <li>سيتم حفظ الملف في مجلد المستندات</li>
+</ol>
+
+<h2>الإعدادات</h2>
+<p>الوصول: NVDA → تفضيلات → إعدادات → Padronix</p>
+<ul>
+    <li>مزود الذكاء الاصطناعي (Google، OpenAI، OpenRouter، Ollama)</li>
+    <li>مفتاح API</li>
+    <li>النموذج</li>
+    <li>المعيار الأكاديمي (ABNT، APA، IEEE، إلخ)</li>
+</ul>
+
+<h2>المتطلبات</h2>
+<ul>
+    <li>NVDA 2024.1 أو أعلى</li>
+    <li>Python 3.11+ (مضمن في NVDA 2026+)</li>
+    <li>اتصال بالإنترنت (باستثناء Ollama المحلي)</li>
+    <li>المكتبات: python-docx، lxml (مضمنة)</li>
+</ul>
+
+<h2>الترخيص</h2>
+<p>GPL v3+ - رخصة جنو العمومية الإصدار 3 أو أعلى</p>
+
+<h2>الاتصال</h2>
+<p>المطور: Melhym Pereira Quemel<br>
+البريد الإلكتروني: <a href="mailto:mpquemel@gmail.com">mpquemel@gmail.com</a><br>
+GitHub: <a href="https://github.com/mpquemel/padronix">github.com/mpquemel/padronix</a></p>
+</body>
+</html>

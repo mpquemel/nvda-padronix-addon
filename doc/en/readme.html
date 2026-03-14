@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Padronix - User Manual</title>
+    <style>
+        body { font-family: Arial, sans-serif; line-height: 1.6; max-width: 800px; margin: 0 auto; padding: 20px; background-color: #f5f5f5; }
+        .container { background-color: white; padding: 30px; border-radius: 8px; box-shadow: 0 2px 4px rgba(0,0,0,0.1); }
+        h1 { color: #2c3e50; border-bottom: 3px solid #3498db; padding-bottom: 10px; }
+        h2 { color: #34495e; border-left: 4px solid #3498db; padding-left: 10px; margin-top: 30px; }
+        h3 { color: #7f8c8d; }
+        .info-box { background-color: #e8f4f8; border-left: 4px solid #3498db; padding: 15px; margin: 20px 0; }
+        .warning-box { background-color: #fef9e7; border-left: 4px solid #f1c40f; padding: 15px; margin: 20px 0; }
+        .success-box { background-color: #e8f8f5; border-left: 4px solid #27ae60; padding: 15px; margin: 20px 0; }
+        code { background-color: #f4f4f4; padding: 2px 6px; border-radius: 3px; font-family: 'Courier New', monospace; }
+        pre { background-color: #2c3e50; color: #ecf0f1; padding: 15px; border-radius: 5px; overflow-x: auto; }
+        a { color: #3498db; text-decoration: underline; }
+        table { width: 100%; border-collapse: collapse; margin: 20px 0; }
+        th, td { border: 1px solid #bdc3c7; padding: 10px; text-align: left; }
+        th { background-color: #3498db; color: white; }
+        tr:nth-child(even) { background-color: #f9f9f9; }
+        .skip-link { position: absolute; top: -40px; left: 0; background: #3498db; color: white; padding: 8px; z-index: 100; }
+        .skip-link:focus { top: 0; }
+    </style>
+</head>
+<body>
+    <a href="#main-content" class="skip-link">Skip to main content</a>
+    <div class="container" id="main-content" role="main">
+        <h1 id="top">🎓 Padronix - User Manual</h1>
+        <p><strong>Version:</strong> 2026.1.0 | <strong>Last updated:</strong> March 4, 2026</p>
+        
+        <nav role="navigation" aria-label="Table of Contents">
+            <h2 id="toc">📑 Table of Contents</h2>
+            <ul>
+                <li><a href="#about">1. About Padronix</a></li>
+                <li><a href="#installation">2. Installation</a></li>
+                <li><a href="#setup">3. AI Provider Setup</a></li>
+                <li><a href="#usage">4. How to Use</a></li>
+                <li><a href="#standards">5. Academic Standards</a></li>
+                <li><a href="#shortcuts">6. Keyboard Shortcuts</a></li>
+                <li><a href="#troubleshooting">7. Troubleshooting</a></li>
+                <li><a href="#author">8. About the Author</a></li>
+            </ul>
+        </nav>
+
+        <h2 id="about">1. About Padronix</h2>
+        <p><strong>Padronix</strong> is an NVDA add-on that automatically structures and formats academic papers using Artificial Intelligence.</p>
+        
+        <div class="info-box">
+            <strong>Key Features:</strong>
+            <ul>
+                <li>Automatic article structuring via AI</li>
+                <li>7 academic standards: ABNT, APA, IEEE, Chicago, Harvard, MLA, Vancouver</li>
+                <li>4 AI providers: Google Gemini, OpenAI, OpenRouter, Ollama Local</li>
+                <li>100% accessible interface with NVDA</li>
+                <li>Auditory feedback throughout processing</li>
+                <li>7 languages supported</li>
+            </ul>
+        </div>
+
+        <h2 id="installation">2. Installation</h2>
+        <h3 id="prerequisites">2.1 Prerequisites</h3>
+        <ul>
+            <li><strong>NVDA:</strong> Version 2024.1 or later</li>
+            <li><strong>Windows:</strong> 10 or 11</li>
+            <li><strong>Python:</strong> 3.11+ (included with NVDA)</li>
+        </ul>
+
+        <h3 id="steps">2.2 Installation Steps</h3>
+        <ol>
+            <li>Download <code>padronix-2026.1.0.nvda-addon</code></li>
+            <li>With NVDA running, press <kbd>NVDA+N</kbd> to open menu</li>
+            <li>Navigate to <strong>Tools</strong> → <strong>Manage Add-ons</strong></li>
+            <li>Press <kbd>I</kbd> for Install</li>
+            <li>Select the downloaded <code>.nvda-addon</code> file</li>
+            <li>Confirm installation</li>
+            <li><strong>Restart NVDA</strong> when prompted (press <kbd>NVDA+Q</kbd>, then <kbd>Enter</kbd>)</li>
+        </ol>
+
+        <div class="success-box">
+            <strong>✅ Verification:</strong> After restart, press <kbd>NVDA+Ctrl+Shift+F</kbd>. You should hear: "Padronix opened".
+        </div>
+
+        <h2 id="setup">3. AI Provider Setup</h2>
+        
+        <h3 id="google-gemini">3.1 Google Gemini (Recommended for long context)</h3>
+        <h4>How to get Google API Key:</h4>
+        <ol>
+            <li>Visit <a href="https://makersuite.google.com/app/apikey" target="_blank">Google AI Studio</a></li>
+            <li>Sign in with your Google account</li>
+            <li>Click <strong>"Create API Key"</strong></li>
+            <li>Select or create a project</li>
+            <li>Click <strong>"Create API Key in existing project"</strong></li>
+            <li>Copy the generated key (starts with <code>AIza...</code>)</li>
+            <li>Store it securely!</li>
+        </ol>
+
+        <div class="warning-box">
+            <strong>⚠️ Free limit:</strong> Google Gemini API offers 60 requests per minute free. For intensive academic use, consider the paid plan.
+        </div>
+
+        <h4>Available models:</h4>
+        <ul>
+            <li><code>gemini-pro</code> - Standard model (fast)</li>
+            <li><code>gemini-1.5-pro</code> - Up to 1M token context</li>
+            <li><code>gemini-1.5-flash</code> - Faster, less accurate</li>
+        </ul>
+
+        <h3 id="openai">3.2 OpenAI (GPT-4, GPT-3.5)</h3>
+        <h4>How to get OpenAI API Key:</h4>
+        <ol>
+            <li>Visit <a href="https://platform.openai.com/api-keys" target="_blank">OpenAI Platform</a></li>
+            <li>Sign in or create account</li>
+            <li>Click <strong>"+ Create new secret key"</strong></li>
+            <li>Name the key (e.g., "Padronix")</li>
+            <li>Copy immediately (starts with <code>sk-proj-...</code>)</li>
+            <li><strong>Warning:</strong> Key only shows once!</li>
+        </ol>
+
+        <div class="warning-box">
+            <strong>💰 Costs:</strong> OpenAI charges per token. GPT-4 is more expensive than GPT-3.5. Monitor usage at <a href="https://platform.openai.com/usage" target="_blank">Usage Dashboard</a>.
+        </div>
+
+        <h3 id="openrouter">3.3 OpenRouter (Multiple models)</h3>
+        <h4>How to get OpenRouter API Key:</h4>
+        <ol>
+            <li>Visit <a href="https://openrouter.ai/keys" target="_blank">OpenRouter Keys</a></li>
+            <li>Sign in (Google, GitHub, or email)</li>
+            <li>Click <strong>"Create Key"</strong></li>
+            <li>Name it (e.g., "Padronix")</li>
+            <li>Copy the key (starts with <code>sk-or-...</code>)</li>
+        </ol>
+
+        <div class="info-box">
+            <strong>OpenRouter advantage:</strong> Single credit gives access to dozens of models: Claude-3, Llama, Mistral, Gemma, and many more.
+        </div>
+
+        <h3 id="ollama">3.4 Ollama Local (100% offline &amp; free)</h3>
+        
+        <h4>Step 1: Download and install Ollama</h4>
+        <ol>
+            <li>Visit <a href="https://ollama.ai/download" target="_blank">ollama.ai/download</a></li>
+            <li>Click <strong>"Download for Windows"</strong></li>
+            <li>Run <code>OllamaSetup.exe</code></li>
+            <li>Follow installation prompts (default is fine)</li>
+            <li>Ollama starts automatically after install</li>
+        </ol>
+
+        <h4>Step 2: Download a model</h4>
+        <p>Open <strong>Command Prompt</strong> or <strong>PowerShell</strong> and type:</p>
+        <pre>ollama pull llama3</pre>
+        
+        <table>
+            <caption>Recommended Ollama Models</caption>
+            <thead>
+                <tr><th>Model</th><th>Size</th><th>RAM required</th><th>Best for</th></tr>
+            </thead>
+            <tbody>
+                <tr><td><code>llama3</code></td><td>8B</td><td>8 GB</td><td>General use (recommended)</td></tr>
+                <tr><td><code>llama3:70b</code></td><td>70B</td><td>32 GB</td><td>Maximum quality</td></tr>
+                <tr><td><code>mistral</code></td><td>7B</td><td>8 GB</td><td>Fast &amp; efficient</td></tr>
+                <tr><td><code>codellama</code></td><td>7B</td><td>8 GB</td><td>Code &amp; technical</td></tr>
+                <tr><td><code>gemma:7b</code></td><td>7B</td><td>8 GB</td><td>Google, lightweight</td></tr>
+            </tbody>
+        </table>
+
+        <h4>Step 3: Verify Ollama is running</h4>
+        <pre>ollama list</pre>
+        <p>Should show installed models. If not, start server:</p>
+        <pre>ollama serve</pre>
+
+        <div class="success-box">
+            <strong>✅ Quick test:</strong> In PowerShell:
+            <pre>ollama run llama3 "Hello, how are you?"</pre>
+            If you get a response, it's working!
+        </div>
+
+        <h2 id="usage">4. How to Use</h2>
+        
+        <h3 id="open-padronix">4.1 Open Padronix</h3>
+        <p>Press: <kbd>NVDA+Ctrl+Shift+F</kbd></p>
+        <p>You'll hear: <em>"Padronix opened"</em></p>
+
+        <h3 id="workflow">4.2 Complete Workflow</h3>
+        <h4>Step 1: Load article</h4>
+        <ol>
+            <li>With Padronix window open, press <kbd>Alt+C</kbd></li>
+            <li>Navigate to your TXT file</li>
+            <li>Press <kbd>Enter</kbd></li>
+            <li>You'll hear: <em>"TXT loaded: [number] characters"</em></li>
+        </ol>
+
+        <h4>Step 2: Select standard</h4>
+        <ol>
+            <li>Press <kbd>Tab</kbd> until you hear "Academic Standard"</li>
+            <li>Use <kbd>Up/Down Arrow</kbd> to choose: ABNT, APA, IEEE, etc.</li>
+        </ol>
+
+        <h4>Step 3: Generate DOCX</h4>
+        <ol>
+            <li>Press <kbd>Alt+G</kbd></li>
+            <li>Hear feedback: <em>"Structuring article with AI..."</em></li>
+            <li>Wait (30-90 seconds)</li>
+            <li>Success sound (piano chord)</li>
+            <li>You'll hear: <em>"Padronix document generated at: [path]"</em></li>
+        </ol>
+
+        <h2 id="standards">5. Academic Standards</h2>
+        <table>
+            <thead><tr><th>Standard</th><th>Region</th><th>Common fields</th></tr></thead>
+            <tbody>
+                <tr><td><strong>ABNT</strong></td><td>Brazil</td><td>All fields (Brazilian standard)</td></tr>
+                <tr><td><strong>APA</strong></td><td>USA / International</td><td>Psychology, Social Sciences, Health</td></tr>
+                <tr><td><strong>IEEE</strong></td><td>International</td><td>Engineering, Computing, Technology</td></tr>
+                <tr><td><strong>Chicago</strong></td><td>USA / UK</td><td>History, Humanities, Arts</td></tr>
+                <tr><td><strong>Harvard</strong></td><td>UK / Commonwealth</td><td>Economics, Business, Sciences</td></tr>
+                <tr><td><strong>MLA</strong></td><td>USA</td><td>Literature, Languages, Arts</td></tr>
+                <tr><td><strong>Vancouver</strong></td><td>International</td><td>Medicine, Health Sciences</td></tr>
+            </tbody>
+        </table>
+
+        <h2 id="shortcuts">6. Keyboard Shortcuts</h2>
+        <table>
+            <thead><tr><th>Shortcut</th><th>Action</th></tr></thead>
+            <tbody>
+                <tr><td><kbd>NVDA+Ctrl+Shift+F</kbd></td><td>Open Padronix main interface</td></tr>
+                <tr><td><kbd>Alt+C</kbd></td><td>Load TXT file</td></tr>
+                <tr><td><kbd>Alt+I</kbd></td><td>Import structured JSON</td></tr>
+                <tr><td><kbd>Alt+G</kbd></td><td>Generate DOCX document</td></tr>
+                <tr><td><kbd>Alt+F</kbd></td><td>Close window</td></tr>
+                <tr><td><kbd>Tab</kbd></td><td>Navigate forward</td></tr>
+                <tr><td><kbd>Shift+Tab</kbd></td><td>Navigate backward</td></tr>
+            </tbody>
+        </table>
+
+        <h2 id="troubleshooting">7. Troubleshooting</h2>
+        <h3 id="error-open">7.1 "Error opening Padronix"</h3>
+        <p><strong>Cause:</strong> Missing dependencies (python-docx, requests)</p>
+        <p><strong>Solution:</strong></p>
+        <pre>pip install python-docx requests</pre>
+
+        <h3 id="ollama-offline">7.2 "Ollama offline"</h3>
+        <p><strong>Cause:</strong> Ollama not running</p>
+        <p><strong>Solution:</strong></p>
+        <pre>ollama serve</pre>
+
+        <h3 id="timeout">7.3 "Request timeout"</h3>
+        <p><strong>Cause:</strong> AI took more than 60 seconds</p>
+        <p><strong>Solution:</strong></p>
+        <ul>
+            <li>Use smaller models (llama3 instead of llama3:70b)</li>
+            <li>Split very long articles (&gt;50 pages)</li>
+            <li>Check internet connection</li>
+        </ul>
+
+        <h2 id="author">8. About the Author</h2>
+        <div class="info-box">
+            <p><strong>Melhym Pereira Quemel</strong></p>
+            <ul>
+                <li>📧 Email: <a href="mailto:mpquemel@gmail.com">mpquemel@gmail.com</a></li>
+                <li>🏛️ President, Commission for Rights of Persons with Disabilities - OAB/RJ Saquarema</li>
+                <li>🎓 Researcher in Law, Technology &amp; Inclusion</li>
+                <li>📡 Amateur Radio Operator PY1MEL since age 12</li>
+            </ul>
+        </div>
+
+        <h3 id="links">8.1 Important Links</h3>
+        <ul>
+            <li><a href="https://github.com/mpquemel/padronix" target="_blank">Project Page on GitHub</a></li>
+            <li><a href="https://www.nvaccess.org/" target="_blank">NV Access - NVDA Creators</a></li>
+            <li><a href="https://addonstore.nvaccess.org/" target="_blank">NVDA Add-on Store</a></li>
+            <li><a href="https://ollama.ai/" target="_blank">Ollama - Local AI</a></li>
+        </ul>
+
+        <p style="text-align: center; margin-top: 40px; color: #7f8c8d;">
+            <strong>Padronix v2026.1.0</strong> | Licensed under GPL-3.0 | Developed with ♿ for ♿
+        </p>
+        <p style="text-align: center;"><a href="#top">↑ Back to top</a></p>
+    </div>
+</body>
+</html>

@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <title>Padronix - NVDA Add-on</title>
+    <style>
+        body { font-family: sans-serif; line-height: 1.6; max-width: 800px; margin: 0 auto; padding: 20px; }
+        h1 { color: #2563eb; }
+        h2 { color: #1e40af; margin-top: 1.5em; }
+        code { background: #f3f4f6; padding: 2px 6px; border-radius: 3px; }
+        .shortcut { font-weight: bold; color: #dc2626; }
+        [dir="rtl"] { direction: rtl; text-align: right; }
+    </style>
+</head>
+<body>
+<h1>Padronix - Formattatore di Articoli Accademici</h1>
+<p>Versione: 2026.1.0</p>
+
+<h2>Descrizione</h2>
+<p>Padronix è un componente aggiuntivo per NVDA che aiuta a strutturare e formattare articoli accademici. Con l'integrazione di modelli IA, consente di generare documenti secondo gli standard ABNT, APA, IEEE e altri formati accademici in modo accessibile e automatizzato.</p>
+
+<h2>Installazione</h2>
+<ol>
+    <li>Scarica il file .nvda-addon</li>
+    <li>Apri NVDA → Strumenti → Gestione componenti aggiuntivi</li>
+    <li>Clicca su "Installa..." e seleziona il file</li>
+    <li>Riavvia NVDA quando richiesto</li>
+</ol>
+
+<h2>Utilizzo</h2>
+<ol>
+    <li>Premi <span class="shortcut">NVDA+Ctrl+Shift+F</span> per aprire Padronix</li>
+    <li>Carica un file TXT con il testo dell'articolo</li>
+    <li>Importa un file JSON strutturato (opzionale)</li>
+    <li>Clicca su "Genera documento DOCX"</li>
+    <li>Il file verrà salvato nella cartella Documenti</li>
+</ol>
+
+<h2>Impostazioni</h2>
+<p>Accesso: NVDA → Preferenze → Impostazioni → Padronix</p>
+<ul>
+    <li>Fornitore IA (Google, OpenAI, OpenRouter, Ollama)</li>
+    <li>Chiave API</li>
+    <li>Modello</li>
+    <li>Standard accademico (ABNT, APA, IEEE, ecc.)</li>
+</ul>
+
+<h2>Requisiti</h2>
+<ul>
+    <li>NVDA 2024.1 o superiore</li>
+    <li>Python 3.11+ (incluso in NVDA 2026+)</li>
+    <li>Connessione Internet (tranne per Ollama locale)</li>
+    <li>Librerie: python-docx, lxml (incluse)</li>
+</ul>
+
+<h2>Licenza</h2>
+<p>GPL v3+ - GNU General Public License versione 3 o successiva</p>
+
+<h2>Contatto</h2>
+<p>Sviluppatore: Melhym Pereira Quemel<br>
+Email: <a href="mailto:mpquemel@gmail.com">mpquemel@gmail.com</a><br>
+GitHub: <a href="https://github.com/mpquemel/padronix">github.com/mpquemel/padronix</a></p>
+</body>
+</html>

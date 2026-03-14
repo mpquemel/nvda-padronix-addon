@@ -1,0 +1,90 @@
+# Padronix NVDA Add-on - Spanish Translation
+# Copyright (C) 2026 Melhym Pereira Quemel
+# This file is distributed under the same license as the Padronix package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2026.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Padronix 2026.1.0\n"
+"Report-Msgid-Bugs-To: mpquemel@gmail.com\n"
+"POT-Creation-Date: 2026-03-04 14:00-0300\n"
+"PO-Revision-Date: 2026-03-04 14:00-0300\n"
+"Last-Translator: \n"
+"Language-Team: Español\n"
+"Language: es\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: globalPlugins/padronix/__init__.py:45
+msgid "Padronix opened"
+msgstr "Padronix abierto"
+
+#: globalPlugins/padronix/__init__.py:50
+msgid "Error opening Padronix"
+msgstr "Error al abrir Padronix"
+
+#: globalPlugins/padronix/main_dialog.py:85
+msgid "Opening TXT file selector..."
+msgstr "Abriendo selector de archivo TXT..."
+
+#: globalPlugins/padronix/main_dialog.py:95
+msgid "TXT loaded"
+msgstr "TXT cargado"
+
+#: globalPlugins/padronix/main_dialog.py:115
+msgid "Opening JSON file selector..."
+msgstr "Abriendo selector de archivo JSON..."
+
+#: globalPlugins/padronix/main_dialog.py:125
+msgid "JSON loaded"
+msgstr "JSON cargado"
+
+#: globalPlugins/padronix/main_dialog.py:135
+msgid "Starting processing..."
+msgstr "Iniciando procesamiento..."
+
+#: globalPlugins/padronix/workflow_manager.py:120
+msgid "Structuring article with AI..."
+msgstr "Estructurando artículo con IA..."
+
+#: globalPlugins/padronix/workflow_manager.py:130
+msgid "Rendering DOCX document..."
+msgstr "Renderizando documento DOCX..."
+
+#: globalPlugins/padronix/workflow_manager.py:140
+msgid "Finalizing..."
+msgstr "Finalizando..."
+
+#: globalPlugins/padronix/workflow_manager.py:145
+msgid "Padronix document generated at"
+msgstr "Documento Padronix generado en"
+
+#: globalPlugins/padronix/workflow_manager.py:155
+msgid "Processing error"
+msgstr "Error de procesamiento"
+
+#: globalPlugins/padronix/padronix_settings.py:45
+msgid "AI Provider"
+msgstr "Proveedor de IA"
+
+#: globalPlugins/padronix/padronix_settings.py:50
+msgid "API Key"
+msgstr "Clave API"
+
+#: globalPlugins/padronix/padronix_settings.py:55
+msgid "Update Models List"
+msgstr "Actualizar Lista de Modelos"
+
+#: globalPlugins/padronix/padronix_settings.py:60
+msgid "Model"
+msgstr "Modelo"
+
+#: globalPlugins/padronix/padronix_settings.py:65
+msgid "Academic Standard"
+msgstr "Estándar Académico"
+
+#: globalPlugins/padronix/padronix_settings.py:70
+msgid "Manage Standards"
+msgstr "Gestionar Estándares"

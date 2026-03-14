@@ -1,0 +1,46 @@
+{
+  "name": "MLA",
+  "description": "Modern Language Association - 9th Edition",
+  "country": "USA",
+  "language": "en",
+  "font": "Times New Roman",
+  "font_size": 12,
+  "margins": {
+    "top": 2.54,
+    "bottom": 2.54,
+    "left": 2.54,
+    "right": 2.54
+  },
+  "spacing": 2.0,
+  "paragraph_spacing": 0.0,
+  "alignment": "left",
+  "page_size": "Letter",
+  "header": {
+    "enabled": true,
+    "student_info": true,
+    "alignment": "right"
+  },
+  "footer": {
+    "enabled": true,
+    "page_numbers": true,
+    "last_name": true
+  },
+  "title_page": {
+    "enabled": false,
+    "elements": ["student_info", "title", "instructor", "course", "date"]
+  },
+  "sections": {
+    "introduction": {
+      "heading": null
+    },
+    "works_cited": {
+      "heading": "Works Cited",
+      "hanging_indent": 1.27,
+      "alphabetical": true
+    }
+  },
+  "citations": {
+    "style": "author-page",
+    "format": "(Author Page)"
+  }
+}

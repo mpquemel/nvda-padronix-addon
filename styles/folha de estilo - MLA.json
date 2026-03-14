@@ -1,0 +1,135 @@
+{
+  "global_font_name": "Times New Roman",
+  "margin_top": 2.54,
+  "margin_left": 2.54,
+  "margin_bottom": 2.54,
+  "margin_right": 2.54,
+  "styles": {
+    "main_title": {
+      "font_size": 14,
+      "is_bold": true,
+      "is_all_caps": false,
+      "alignment": "CENTER",
+      "space_after": 24,
+      "line_spacing": 2.0
+    },
+    "foreign_title": {
+      "font_size": 12,
+      "is_bold": false,
+      "alignment": "CENTER",
+      "space_before": 12,
+      "space_after": 12,
+      "line_spacing": 2.0
+    },
+    "author_affiliation": {
+      "font_size": 12,
+      "alignment": "CENTER",
+      "space_before": 6,
+      "space_after": 12,
+      "line_spacing": 2.0
+    },
+    "section_title": {
+      "font_size": 12,
+      "is_bold": false,
+      "is_all_caps": false,
+      "alignment": "LEFT",
+      "space_before": 24,
+      "space_after": 12,
+      "line_spacing": 2.0
+    },
+    "subsection_title": {
+      "font_size": 12,
+      "is_bold": true,
+      "is_all_caps": false,
+      "alignment": "LEFT",
+      "space_before": 18,
+      "space_after": 12,
+      "line_spacing": 2.0
+    },
+    "section_title_l3": {
+      "font_size": 12,
+      "is_bold": true,
+      "is_italic": true,
+      "alignment": "LEFT",
+      "line_spacing": 2.0
+    },
+    "section_title_l4": {
+      "font_size": 12,
+      "is_bold": false,
+      "is_italic": true,
+      "alignment": "LEFT",
+      "line_spacing": 2.0
+    },
+    "section_title_l5": {
+      "font_size": 12,
+      "alignment": "LEFT",
+      "line_spacing": 2.0
+    },
+    "main_abstract": {
+      "font_size": 12,
+      "alignment": "JUSTIFY",
+      "space_before": 12,
+      "space_after": 12,
+      "line_spacing": 2.0
+    },
+    "main_keywords": {
+      "font_size": 12,
+      "alignment": "JUSTIFY",
+      "space_before": 6,
+      "space_after": 12,
+      "line_spacing": 2.0
+    },
+    "foreign_abstract": {
+      "font_size": 12,
+      "alignment": "JUSTIFY",
+      "space_before": 12,
+      "space_after": 12,
+      "line_spacing": 2.0
+    },
+    "foreign_keywords": {
+      "font_size": 12,
+      "alignment": "JUSTIFY",
+      "space_before": 6,
+      "space_after": 12,
+      "line_spacing": 2.0
+    },
+    "body_paragraph": {
+      "font_size": 12,
+      "alignment": "JUSTIFY",
+      "line_spacing": 1.5
+    },
+    "long_citation": {
+      "font_size": 10,
+      "alignment": "JUSTIFY",
+      "line_spacing": 1.0,
+      "left_indent": 4.0
+    },
+    "bib_reference": {
+      "font_size": 12,
+      "alignment": "LEFT",
+      "space_after": 12,
+      "first_line_indent": -1.27,
+      "left_indent": 0.0,
+      "line_spacing": 2.0
+    },
+    "list_item_numbered": {
+      "font_size": 12,
+      "alignment": "JUSTIFY",
+      "left_indent": 1.27,
+      "line_spacing": 2.0
+    },
+    "list_item_bullet": {
+      "font_size": 12,
+      "alignment": "JUSTIFY",
+      "left_indent": 1.27,
+      "line_spacing": 2.0
+    },
+    "caption": {
+      "font_size": 10,
+      "alignment": "CENTER",
+      "space_before": 12,
+      "space_after": 12,
+      "line_spacing": 2.0
+    }
+  }
+}

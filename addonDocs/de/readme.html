@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <title>Padronix - NVDA Add-on</title>
+    <style>
+        body { font-family: sans-serif; line-height: 1.6; max-width: 800px; margin: 0 auto; padding: 20px; }
+        h1 { color: #2563eb; }
+        h2 { color: #1e40af; margin-top: 1.5em; }
+        code { background: #f3f4f6; padding: 2px 6px; border-radius: 3px; }
+        .shortcut { font-weight: bold; color: #dc2626; }
+        [dir="rtl"] { direction: rtl; text-align: right; }
+    </style>
+</head>
+<body>
+<h1>Padronix - Akademischer Artikel-Formatierer</h1>
+<p>Version: 2026.1.0</p>
+
+<h2>Beschreibung</h2>
+<p>Padronix ist eine NVDA-Erweiterung, die bei der Strukturierung und Formatierung akademischer Artikel hilft. Mit der Integration von KI-Modellen ermöglicht es die Erstellung von Dokumenten nach den Standards ABNT, APA, IEEE und anderen akademischen Formaten auf zugängliche und automatisierte Weise.</p>
+
+<h2>Installation</h2>
+<ol>
+    <li>Laden Sie die .nvda-addon-Datei herunter</li>
+    <li>Öffnen Sie NVDA → Werkzeuge → Erweiterungen verwalten</li>
+    <li>Klicken Sie auf "Installieren..." und wählen Sie die Datei aus</li>
+    <li>Starten Sie NVDA bei Aufforderung neu</li>
+</ol>
+
+<h2>Verwendung</h2>
+<ol>
+    <li>Drücken Sie <span class="shortcut">NVDA+Ctrl+Shift+F</span>, um Padronix zu öffnen</li>
+    <li>Laden Sie eine TXT-Datei mit dem Artikeltext</li>
+    <li>Importieren Sie eine strukturierte JSON-Datei (optional)</li>
+    <li>Klicken Sie auf "DOCX-Dokument generieren"</li>
+    <li>Die Datei wird im Ordner Dokumente gespeichert</li>
+</ol>
+
+<h2>Einstellungen</h2>
+<p>Zugriff: NVDA → Einstellungen → Einstellungen → Padronix</p>
+<ul>
+    <li>KI-Anbieter (Google, OpenAI, OpenRouter, Ollama)</li>
+    <li>API-Schlüssel</li>
+    <li>Modell</li>
+    <li>Akademischer Standard (ABNT, APA, IEEE, etc.)</li>
+</ul>
+
+<h2>Anforderungen</h2>
+<ul>
+    <li>NVDA 2024.1 oder höher</li>
+    <li>Python 3.11+ (in NVDA 2026+ enthalten)</li>
+    <li>Internetverbindung (außer für lokales Ollama)</li>
+    <li>Bibliotheken: python-docx, lxml (enthalten)</li>
+</ul>
+
+<h2>Lizenz</h2>
+<p>GPL v3+ - GNU General Public License Version 3 oder höher</p>
+
+<h2>Kontakt</h2>
+<p>Entwickler: Melhym Pereira Quemel<br>
+E-Mail: <a href="mailto:mpquemel@gmail.com">mpquemel@gmail.com</a><br>
+GitHub: <a href="https://github.com/mpquemel/padronix">github.com/mpquemel/padronix</a></p>
+</body>
+</html>
